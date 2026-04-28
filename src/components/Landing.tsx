@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onHistoryClick, isSearchin
             >
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(255,107,0,0.3)] border-2 border-white ring-1 ring-gray-100 group">
                 <img 
-                  src="/hero.jpg" 
+                  src="https://res.cloudinary.com/progresshenry/image/upload/v1777390277/hero_vbjkyn.jpg" 
                   alt="WorldBridge Logistics Specialist" 
                   className="w-full h-auto object-cover aspect-[4/3] scale-105 group-hover:scale-110 transition-transform duration-1000"
                   referrerPolicy="no-referrer"
