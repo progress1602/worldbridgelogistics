@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+  --color-primary: #FF6B00; /* Modern Orange */
+  --color-navy: #0F172A; /* Deep Slate for contrast */
+  --color-accent: #FFF7ED; /* Soft Orange tint */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  section {
+    scroll-margin-top: 100px;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply text-navy;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+  }
+  .print-content {
+    position: static !important;
+    overflow: visible !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+  .print-page-break {
+    page-break-after: always;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Map Pulse Animation */
+.map-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 0.8;
+  }
+  50% {
+    stroke-width: 10;
+    stroke-opacity: 0;
+    fill-opacity: 0.4;
+  }
+  100% {
+    stroke-width: 2;
+    stroke-opacity: 0;
+    fill-opacity: 0.8;
+  }
+}
