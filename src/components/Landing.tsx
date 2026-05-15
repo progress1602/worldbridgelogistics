@@ -141,7 +141,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, isSearching }) => {
                 </button>
             </div>
 
-            <div className="mt-12 flex items-center gap-8 grayscale opacity-50 group-hover:grayscale-0 transition-all">
+            <div className="mt-12 flex items-center gap-8 transition-all">
                 <div className="flex -space-x-3">
                    {[1,2,3,4].map(i => (
                      <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-100 overflow-hidden">
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, isSearching }) => {
                      </div>
                    ))}
                 </div>
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest">
+                <div className="text-xs font-bold text-black uppercase tracking-widest">
                   Trusted by <span className="text-navy font-black">2.5k+</span> global partners
                 </div>
             </div>
@@ -283,7 +283,7 @@ export const HowItWorks: React.FC = () => {
 
               {item.image && (
                 <div className="absolute inset-0 opacity-40 group-hover:opacity-80 transition-opacity z-10 transition-all duration-700">
-                  <img src={item.image} alt={item.title} className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-transform duration-1000" referrerPolicy="no-referrer" />
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-transform duration-1000" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/20 to-transparent group-hover:from-primary/5 transition-all duration-500" />
                 </div>
               )}

@@ -34,7 +34,7 @@ export const Navbar: React.FC<{ onAdminClick: () => void; onHomeClick: () => voi
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
           <div className="flex gap-8">
             <span className="flex items-center gap-2 transition-colors hover:text-primary cursor-pointer"><Phone className="w-3 h-3 text-primary" /> +1 (800) 123-4567</span>
-            <span className="flex items-center gap-2 transition-colors hover:text-primary cursor-pointer"><Mail className="w-3 h-3 text-primary" /> info@totalexpress.com</span>
+            <span className="flex items-center gap-2 transition-colors hover:text-primary cursor-pointer"><Mail className="w-3 h-3 text-primary" /> worldbridgelogistics73@gmail.com</span>
           </div>
           <div className="flex gap-6">
             <span className="flex items-center gap-2"><Clock className="w-3 h-3 text-primary" /> Ops: 24/7 Global Sync</span>
